@@ -40,7 +40,7 @@ def newtonraphson(fun,eps,start,end):
 def secant_method(fun,eps,start,end):
     itr=0
     x = sp.symbols('x')
-    F = sp.lambdify(x, fun)  # פונקציה מקורית\
+    F = sp.lambdify(x, fun)  
     i=start
     while(i<end):
         if(F(i)*F(i+1)<=0):
